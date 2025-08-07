@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CC4E8FEA2E449EFE0004D348 /* LiveKitComponents in Frameworks */ = {isa = PBXBuildFile; productRef = CC4E8FE92E449EFE0004D348 /* LiveKitComponents */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CC4E8FD62E449EA50004D348 /* AudioWaveFormVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioWaveFormVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4E8FEA2E449EFE0004D348 /* LiveKitComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = AudioWaveFormVisualizer;
 			packageProductDependencies = (
+				CC4E8FE92E449EFE0004D348 /* LiveKitComponents */,
 			);
 			productName = AudioWaveFormVisualizer;
 			productReference = CC4E8FD62E449EA50004D348 /* AudioWaveFormVisualizer.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = CC4E8FCD2E449EA50004D348;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CC4E8FE82E449EFE0004D348 /* XCRemoteSwiftPackageReference "components-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CC4E8FD72E449EA50004D348 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC4E8FE82E449EFE0004D348 /* XCRemoteSwiftPackageReference "components-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/components-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC4E8FE92E449EFE0004D348 /* LiveKitComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC4E8FE82E449EFE0004D348 /* XCRemoteSwiftPackageReference "components-swift" */;
+			productName = LiveKitComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC4E8FCE2E449EA50004D348 /* Project object */;
 }
